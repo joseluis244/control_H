@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <iframe src="http://demo.orthanc-server.com/web-viewer/app/viewer.html?series=2ac1316d-3e432022-62eabff2-c59f5475-9b1ac3f8" frameborder="0" style="width: 800px; height: 800px;"></iframe>
+    <button onclick="cambio()">asd</button>
+    <script>
+        function cambio(){
+        var frame = document.getElementsByTagName("iframe");
+        frame[0].src="http://demo.orthanc-server.com/web-viewer/app/viewer.html?series=635faa23-fd8378ee-d03bce29-ee47c2fb-a65c5509";
+        }
+        
+    </script>
+</body>
+</html>

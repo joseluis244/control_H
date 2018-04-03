@@ -1,0 +1,23 @@
+{
+  "name": "control_h",
+  "version": "1.0.0",
+  "description": "control equipos de hospitales",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joseluis244/control_H.git"
+  },
+  "author": "Jose Luis camacho M.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joseluis244/control_H/issues"
+  },
+  "homepage": "https://github.com/joseluis244/control_H#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "express-force-ssl": "^0.3.2"
+  }
+}
