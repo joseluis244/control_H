@@ -1,8 +1,8 @@
 module.exports = function(app){
     app.get("/",function(req,res){
-        res.send("kjkhjkhjkhjk");
+        res.send("siadasudha");
     });
-    app.get("/aa",function(req,res){
-        res.send("7987987");
+    app.get("/main",function(req,res){
+        res.render("main.ejs");
     });
 }
