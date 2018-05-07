@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    #a{
+        background-color: wheat;
+    }
+    .aa{
+        height: 0px;
+        display: none;
+    }
+    .ab{
+        animation-name: ver;
+        animation-duration: 2s;
+    }
+    @keyframes ver{
+        from{height: 0px;}
+        to{height: 100px; display: block;}
+    }
+    </style>
+</head>
+<body>
+    <div id="a" class="ab">
+        <ul>
+            <li>asd</li>
+            <li>asdasd</li>
+            <li>asdasd</li>
+        </ul>
+    </div>
+    <button onclick="ver()">animar</button>
+    <script>
+
+    function ver(){
+        var a = document.getElementById("a");
+        a.style.display = "block";
+    }
+
+    </script>
+</body>
+</html>

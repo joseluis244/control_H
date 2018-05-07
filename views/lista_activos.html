@@ -1,0 +1,52 @@
+<style>
+    .lista .Litem{
+        background-color: #f3f3f3;
+        margin-bottom: 1px;
+    }
+    .lista{
+        padding: 10px;
+    }
+    .buscar{
+        text-align: center;
+        margin-top: 10px;
+    }
+</style>
+<div lass="mdl-layout mdl-js-layout" style="width: 100%">
+    <div class="buscar"> 
+        <input id="filtro" onkeyup="buscar()" type="text" style="width: 90%;font-size: 18px;" placeholder="Buscar"> 
+    </div>
+    <div class="lista">
+        <ul class="mdl-list">
+
+            <li class="mdl-list__item mdl-list__item--two-line Litem"> 
+                <span class="mdl-list__item-primary-content">
+                    <span class="nombre">Digitalizador</span> 
+                    <span class="mdl-list__item-sub-title"><span class="iden">N/S:</span><span class="iden_valor">12345</span></span>
+                </span>
+            </li>
+            <li class="mdl-list__item mdl-list__item--two-line Litem"> 
+                <span class="mdl-list__item-primary-content">
+                    <span class="nombre">Monitor</span> 
+                    <span class="mdl-list__item-sub-title"><span class="iden">N/S:</span><span class="iden_valor">67890</span></span>
+                </span>
+            </li>
+
+        </ul>
+    </div>
+</div>
+<script>
+    function buscar(){
+        var li = document.getElementsByClassName("Litem");
+        var filtro = document.getElementById("filtro").value.toUpperCase();
+        var nombres = document.getElementsByClassName("nombre");
+        var iden = document.getElementsByClassName("iden_valor");
+        for(i=0;i<=nombres.length-1;i++){
+            if(nombres[i].innerHTML.toUpperCase().indexOf(filtro)>-1 || iden[i].innerHTML.toUpperCase().indexOf(filtro)>-1){
+                li[i].style.display="";
+            }
+            else{
+                li[i].style.display="none";
+            }
+        }
+    }
+</script>
